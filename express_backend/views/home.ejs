@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-red-700 text-5xl">This is main page </h1>
+    </header>
+    <main>
+        <h3>All names who tried to contact</h3>
+        <ul>
+        <% allNames.forEach(name=> { %>
+            <li><%= name.name %></li>        
+        <% }) %>
+        </ul>
+    </main>
+</body>
+</html>
